@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colombia - Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../Styles/style.css" />
+    <link
+      rel="shortcut icon"
+      href="../sources/Colombia.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header class="header-tricolor text-center py-3">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand text-black fs-4" href="./index.html">Home</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-black fs-4"
+                  href="./invasive_species.html"
+                  >invasive species</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <h1>Bienvenidos a Colombia</h1>
+      <p>Explora los departamentos de Colombia</p>
+    </header>
+
+    <main class="container my-4">
+        <h2 class="text-center">Colombia</h2>
+      <p class="text-center fs-6text-center">
+        Colombia es un país ubicado en la esquina noroeste de América del Sur,
+        caracterizado por su rica diversidad cultural y geográfica. Con costas
+        tanto en el Mar Caribe como en el Océano Pacífico, ofrece una mezcla de
+        playas paradisíacas, montañas imponentes en los Andes, selvas tropicales
+        en la Amazonía, y vastas llanuras en Los Llanos. Bogotá, su capital, es
+        una ciudad vibrante con un fuerte enfoque en la cultura y la educación.
+        Colombia es conocida por su producción de café, sus festivales coloridos
+        como el Carnaval de Barranquilla, y su legado histórico reflejado en
+        sitios como Cartagena. A pesar de un pasado marcado por conflictos, el
+        país ha emergido como un destino turístico atractivo, ofreciendo
+        experiencias que combinan aventura, historia y calidez humana.
+      </p>
+      <div class="row mb-4">
+        <div class="col-12">
+          <input
+            type="text"
+            id="searchInput"
+            class="form-control"
+            placeholder="Buscar departamento..."
+          />
+        </div>
+      </div>
+
+      <div
+        id="departmentsContainer"
+        class="row row-cols-1 row-cols-md-3 g-4"
+      ></div>
+    </main>
+
+    <script type="module" src="../JavaScrip/main.js"></script>
+  </body>
+</html>
